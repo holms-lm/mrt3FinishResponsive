@@ -13,10 +13,10 @@ $greenButton: #37c3a8;
   font-weight: bold;
   padding: 7px;
 }
-@import "header";
-@import "banner";
-@import "main_content";
-@import "carousel";
+@import "parts/header";
+@import "parts/banner";
+@import "parts/main_content";
+@import "parts/carousel";
 //@import "bootstrap-social.less";
-@import "footer";
+@import "parts/footer";
 

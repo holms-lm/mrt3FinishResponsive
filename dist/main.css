@@ -16,6 +16,9 @@ header {
     padding: 0 15px;
     height: 100%;
     align-content: center; }
+  @media (max-width: 540px) {
+    header .logo img {
+      max-width: 45vw; } }
   header .phone {
     padding-right: 15px;
     font-size: 10pt;
@@ -78,7 +81,8 @@ section.banner {
     border: 1px solid #494848;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    margin-left: -5px; }
+    margin-left: -5px;
+    margin-top: 10px; }
   .contact-us input {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -153,7 +157,7 @@ section.clinics {
         height: auto; }
         @media (max-width: 968px) {
           section.clinics .card-clinic .header-clinic img {
-            display: none; } }
+            max-width: 32vw; } }
       section.clinics .card-clinic .header-clinic .bold {
         font-size: 20px;
         font-weight: bold;
@@ -287,6 +291,9 @@ section.carusel #readMore {
       margin-top: 10px;
       margin-bottom: 10px;
       border: 0px; }
+      @media (max-width: 366px) {
+        .row-call-back .contact-us button {
+          margin-left: 0; } }
     .row-call-back .contact-us input {
       border: 0px; }
 
@@ -313,6 +320,7 @@ footer .main-footer {
     width: fit-content;
     margin: 30px 0 60px 0; }
   footer .main-footer .for-links input, footer .main-footer .for-links textarea {
+    display: block;
     margin: 15px 0;
     background-color: #ffffff00;
     border: none;
@@ -342,6 +350,13 @@ footer .copyright {
   footer .copyright .row-copyright {
     min-height: 130px; }
   footer .copyright .col-copyright {
-    margin: auto 0; }
+    margin: auto 0;
+    text-align: center; }
   footer .copyright .white {
     color: white; }
+
+ul.mark-blue {
+  list-style-type: disc;
+  list-style: url("../asssets/list-marker.png"); }
+  ul.mark-blue li {
+    margin-bottom: 15px; }

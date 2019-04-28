@@ -4,12 +4,6 @@ header {
   .main{
     height: 118px;
   }
-  .left{
-    //background-color: red;
-  }
-  .right{
-    //background-color: green;
-  }
   .right .row {
     height: 100%;
     justify-content: flex-end;
@@ -30,7 +24,11 @@ header {
     align-content: center;
   }
   .logo{
-    //background-color: antiquewhite;
+    img {
+      @media (max-width: 540px) {
+        max-width: 45vw;
+      }
+    }
   }
   .phone{
     //background-color: antiquewhite;
