@@ -1,0 +1,71 @@
+section.carusel {
+  .main-row {
+    .flex-col {
+      display: flex;
+      align-content: space-between;
+      flex-wrap: wrap;
+    }
+    .v-align {
+      flex-basis: 100%;
+    }
+  }
+  .post-header {
+    color: $textColor;
+  }
+  .carousel-item {
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 1200px) {
+      .hide-on-min {
+        display: none;
+      }
+    }
+    .post-text {
+      font-size: 10px;
+    }
+  }
+  #carouselTestimonial {
+    p {
+      font-size: 10px;
+    }
+  }
+  .control-left-side {
+    display: flex;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: #ccd4e7;
+    margin: 10px;
+    a {
+      //width: 100%;
+      //height: 100%;
+    }
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .carousel-control-prev-icon {
+    background-image: url("../asssets/arrow-left.png");
+  }
+  .carousel-control-next-icon {
+    background-image: url("../asssets/arrow-right.png");
+  }
+  .icon-button {
+    width: auto;
+    height: 100%;
+    background: #ccd4e7;
+  }
+  .for-button {
+    text-align: end;
+  }
+  #readMore {
+    @include buttonStyle($greenButton, white);
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,22 @@
+$mainColor: #43b1d2;
+$menuColor: #494848;
+$colorBanner: #cbd4e6;
+$grayColor: #e5e9f2;
+$textColor: #737677;
+$greenButton: #37c3a8;
+@mixin buttonStyle($bgColor, $color) {
+  border: none;
+  border-radius: 5px;
+  background-color: $bgColor;
+  color: $color;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 7px;
+}
+@import "header";
+@import "banner";
+@import "main_content";
+@import "carousel";
+//@import "bootstrap-social.less";
+@import "footer";
+

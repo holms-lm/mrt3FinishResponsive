@@ -1,0 +1,90 @@
+section.banner{
+  background-color: $colorBanner;
+  .container {
+    height: 515px;
+    background-image: url("../asssets/banner-min.jpg");
+    @media (max-width: 768px) {
+      background-position-x: right;
+    }
+  }
+  .banner-column {
+    font-size: 18px;
+    color: $menuColor;
+    height: 515px;
+    padding: 10px;
+    align-items: flex-end;
+    div {
+      width: 100%;
+      text-align: end;
+      margin-bottom: 35px;
+    }
+    .description {
+      margin-top: auto;
+    }
+  }
+  form {
+    margin-top: 15px;
+  }
+  span.bold {
+    font-size: 27px;
+    font-weight: bold;
+    padding-left: 20%;
+  }
+}
+.contact-us {
+  opacity: .8;
+  button {
+    color: $menuColor;
+    background-color: #ffffff00;
+    border: 1px solid $menuColor;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -5px;
+  }
+  input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 0px;
+  }
+}
+section.service {
+  .col-md-3 {
+    //height: 324px;
+    height: 280px;
+  }
+  .service-1 {
+    background-color: #43b1d2;
+  }
+  .service-2 {
+    background-color: #3fb6c6;
+  }
+  .service-3 {
+    background-color: #3cbbbb;
+  }
+  .service-4 {
+    background-color: #37c3a8;
+  }
+  .circle-icon {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 60px auto 15px auto;
+    div.for-icon{
+      margin: 0 auto;
+      width: fit-content;
+    }
+  }
+  .header, .description {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+  }
+  .header {
+    font-size: 16pt;
+  }
+  .description {
+    font-size: 10pt;
+  }
+}

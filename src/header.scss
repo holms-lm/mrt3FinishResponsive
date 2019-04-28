@@ -1,0 +1,75 @@
+
+header {
+   background-color: $mainColor;
+  .main{
+    height: 118px;
+  }
+  .left{
+    //background-color: red;
+  }
+  .right{
+    //background-color: green;
+  }
+  .right .row {
+    height: 100%;
+    justify-content: flex-end;
+  }
+  .right .side-right{
+    align-items: flex-start;
+    padding-top: 26px;
+    padding-right: 15px;
+  }
+  .box{
+    height: 50px;
+    width: 50px;
+    //background-color: antiquewhite;
+  }
+  .for-logo{
+    padding: 0 15px;
+    height: 100%;
+    align-content: center;
+  }
+  .logo{
+    //background-color: antiquewhite;
+  }
+  .phone{
+    //background-color: antiquewhite;
+    padding-right: 15px;
+    font-size: 10pt;
+    font-weight: bold;
+    line-height: 17pt;
+    color: white;
+    a {
+      color: white;
+    }
+
+    img{
+      margin-right: 3px;
+    }
+  }
+  .for-nav {
+    margin-top: -80px;
+    justify-content: flex-end;
+  }
+  .nav {
+    margin-top: 10px;
+    a.active {
+      color: white;
+    }
+    a {
+      color: $menuColor;
+    }
+    //background-color: aliceblue;
+  }
+  .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+  .navbar {
+    justify-content: flex-end;
+  }
+  .navbar-toggler {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+}
+
