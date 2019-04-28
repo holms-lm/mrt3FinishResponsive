@@ -13,10 +13,17 @@ $greenButton: #37c3a8;
   font-weight: bold;
   padding: 7px;
 }
+body {
+  color: $textColor;
+  font-family: lato, calibri, monospace;
+}
+.over-hover:hover {
+  transition: opacity 800ms;
+  opacity: .7;
+}
 @import "parts/header";
 @import "parts/banner";
 @import "parts/main_content";
 @import "parts/carousel";
-//@import "bootstrap-social.less";
 @import "parts/footer";
 

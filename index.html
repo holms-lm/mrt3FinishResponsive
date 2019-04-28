@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="dist/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dist/main.css">
 </head>
 <body>
 <header>
@@ -18,7 +21,11 @@
             <div class="col-6 col-md-4 left">
                 <div class="row for-logo">
                     <div class="logo">
-                        <img src="asssets/logo.png" alt="MRT">
+                        <a href="#">
+                            <div class="over-hover">
+                                <img src="asssets/logo.png" alt="MRT">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -86,7 +93,7 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="row banner-column">
                         <div class="description">
-                            <span> Всю необходимую информацию о том, как и в каком центре
+                            <span>Всю необходимую информацию о том, как и в каком центре
                                 сделать МРТ, КТ и рентген исследованиях, cравнить интересующие
                                 Вас клиники, цены на диагностику и порядок прохождения
                                 процедур, а также записаться на исследование можно по
@@ -95,10 +102,12 @@
                         </div>
                         <div>
                             <span class="bold">Оставьте свой номер, а мы Вам перезвоним</span>
-                            <form action="hendler.php">
+                            <!--<form action="hendler.php">-->
+                            <form>
                                 <div class="contact-us">
-                                    <input type="text" placeholder="+380" name="phone">
-                                    <button>Отправить</button>
+                                    <input type="tel" placeholder="+380" name="phone" required>
+                                    <!--<button id="buttonOnBanner" formtarget="_blank">Отправить</button>-->
+                                    <span id="buttonOnBanner">Отправить</span>
                                 </div>
                             </form>
 
@@ -892,8 +901,8 @@
                 <div class="for-form">
                     <form action="hendler.php">
                         <div class="contact-us">
-                            <input type="text" placeholder="+380" name="phone">
-                            <button>Отправить</button>
+                            <input type="tel" placeholder="+380" name="phone" required">
+                            <button id="orderCall" formtarget="_blank">Отправить</button>
                         </div>
                     </form>
 
@@ -1037,10 +1046,10 @@
                     </div>
                     <div>
                         <form action="headler.php">
-                            <input type="text" name="name" placeholder="Name">
-                            <input type="text" placeholder="Phone" name="phone">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="tel" placeholder="Phone" name="phone" required>
                             <textarea name="message" id="message" cols="24" rows="5" placeholder="Message"></textarea>
-                            <button id="buttonInFooter">Submit</button>
+                            <button id="buttonInFooter"  formtarget="_blank">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -1079,5 +1088,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<!--<script src="dist/main.js"></script>-->
+<script src="dist/main.js"></script>
 </html>

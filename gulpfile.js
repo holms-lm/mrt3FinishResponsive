@@ -14,7 +14,7 @@ gulp.task('style', function () {
 
 gulp.task('watch', function () {
     gulp.watch('./src/**/*.scss',  gulp.parallel('style'));
-    gulp.watch('./src/**/*.js',  gulp.parallel('style'));
+    gulp.watch('./src/**/*.js',  gulp.parallel('script'));
 });
 
 gulp.task('script', function () {

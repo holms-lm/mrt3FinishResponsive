@@ -1,3 +1,11 @@
+body {
+  color: #737677;
+  font-family: lato, calibri, monospace; }
+
+.over-hover:hover {
+  transition: opacity 800ms;
+  opacity: .7; }
+
 header {
   background-color: #43b1d2; }
   header .main {
@@ -124,9 +132,6 @@ section.service .header {
 
 section.service .description {
   font-size: 10pt; }
-
-body {
-  color: #737677; }
 
 section.clinics {
   padding: 45px 0px; }
