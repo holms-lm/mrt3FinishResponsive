@@ -104,6 +104,9 @@ footer {
   .row-social {
     font-size: 27px;
     margin-top: 30px;
+    a {
+      color: $textColor;
+    }
     i {
       margin: 0 20px;
     }
