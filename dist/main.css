@@ -2,10 +2,6 @@ body {
   color: #737677;
   font-family: lato, calibri, monospace; }
 
-.over-hover:hover {
-  transition: opacity 800ms;
-  opacity: .7; }
-
 header {
   background-color: #43b1d2; }
   header .main {
@@ -307,7 +303,10 @@ footer .main-footer {
   background-color: #e5e9f2;
   padding: 80px 10px; }
   footer .main-footer .for-links a {
-    color: #737677; }
+    color: #737677;
+    transition: color 800ms; }
+  footer .main-footer .for-links a:hover {
+    color: #000000b3; }
   footer .main-footer .for-links .col-left .list {
     margin: 30px 0;
     display: flex; }
@@ -347,7 +346,10 @@ footer .row-social {
   font-size: 27px;
   margin-top: 30px; }
   footer .row-social a {
-    color: #737677; }
+    color: #737677;
+    transition: color 800ms; }
+  footer .row-social a:hover {
+    color: #000000b3; }
   footer .row-social i {
     margin: 0 20px; }
 
@@ -367,3 +369,9 @@ ul.mark-blue {
   list-style: url("../asssets/list-marker.png"); }
   ul.mark-blue li {
     margin-bottom: 15px; }
+
+.over-hover {
+  transition: opacity 800ms; }
+
+.over-hover:hover {
+  opacity: .7; }

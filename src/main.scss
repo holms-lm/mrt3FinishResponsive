@@ -17,13 +17,18 @@ body {
   color: $textColor;
   font-family: lato, calibri, monospace;
 }
-.over-hover:hover {
-  transition: opacity 800ms;
-  opacity: .7;
-}
+
 @import "parts/header";
 @import "parts/banner";
 @import "parts/main_content";
 @import "parts/carousel";
 @import "parts/footer";
+
+.over-hover {
+  transition: opacity 800ms;
+}
+.over-hover:hover {
+  opacity: .7;
+}
+
 
