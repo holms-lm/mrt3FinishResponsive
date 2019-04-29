@@ -20,9 +20,13 @@ header {
     padding: 0 15px;
     height: 100%;
     align-content: center; }
-  @media (max-width: 540px) {
-    header .logo img {
-      max-width: 45vw; } }
+  header .logo {
+    transition: opacity 400ms; }
+    @media (max-width: 540px) {
+      header .logo img {
+        max-width: 45vw; } }
+  header .logo:hover {
+    opacity: .7; }
   header .phone {
     padding-right: 15px;
     font-size: 10pt;
@@ -176,7 +180,8 @@ section.clinics {
       line-height: 12px; }
     section.clinics .card-clinic .footer {
       justify-content: space-between;
-      margin: 0 15px; }
+      margin: 0 15px;
+      z-index: 2; }
       section.clinics .card-clinic .footer span {
         font-size: 11px;
         font-weight: bold; }
@@ -373,5 +378,18 @@ ul.mark-blue {
 .over-hover {
   transition: opacity 800ms; }
 
+.card-clinic {
+  position: relative; }
+
+.over-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: .0;
+  transition: opacity 400ms; }
+
 .over-hover:hover {
-  opacity: .7; }
+  opacity: 0.4; }

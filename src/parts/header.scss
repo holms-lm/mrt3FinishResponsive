@@ -24,11 +24,15 @@ header {
     align-content: center;
   }
   .logo{
+    transition: opacity 400ms;
     img {
       @media (max-width: 540px) {
         max-width: 45vw;
       }
     }
+  }
+  .logo:hover {
+    opacity: .7;
   }
   .phone{
     //background-color: antiquewhite;
